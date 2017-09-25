@@ -689,9 +689,9 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="2JV-XT-yP2">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="163" y="199" width="1000" height="400"/>
+                        <rect key="contentRect" x="163" y="199" width="1100" height="430"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
-                        <value key="minSize" type="size" width="1000" height="400"/>
+                        <value key="minSize" type="size" width="1100" height="430"/>
                         <connections>
                             <outlet property="delegate" destination="r9z-KX-YJl" id="YAJ-Ef-abt"/>
                         </connections>
@@ -863,7 +863,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="588" height="426"/>
-                                            <size key="maxSize" width="939" height="10000000"/>
+                                            <size key="maxSize" width="941" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
@@ -889,7 +889,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="588" height="425"/>
-                                            <size key="maxSize" width="588" height="10000000"/>
+                                            <size key="maxSize" width="590" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
