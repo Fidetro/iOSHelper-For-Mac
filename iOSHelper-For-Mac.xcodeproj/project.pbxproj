@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AE95BC41F78AA77007DF583 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BC31F78AA77007DF583 /* AppDelegate.m */; };
+		9AE95BC91F78AA77007DF583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE95BC81F78AA77007DF583 /* Assets.xcassets */; };
+		9AE95BCC1F78AA77007DF583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE95BCA1F78AA77007DF583 /* Main.storyboard */; };
+		9AE95BCF1F78AA77007DF583 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BCE1F78AA77007DF583 /* main.m */; };
+		9AE95BD91F78AC25007DF583 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BD81F78AC25007DF583 /* MainTabViewController.m */; };
+		9AE95BDC1F78ACC1007DF583 /* JSONToPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BDB1F78ACC1007DF583 /* JSONToPropertyViewController.m */; };
+		9AE95BDE1F78AEFD007DF583 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE95BDD1F78AE9F007DF583 /* cat.png */; };
+		9AE95BE11F78AF7B007DF583 /* LazyGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE01F78AF7B007DF583 /* LazyGetViewController.m */; };
+		9AE95BE41F78AFB2007DF583 /* RegexHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE31F78AFB2007DF583 /* RegexHelper.m */; };
+		9AE95BE71F78B07D007DF583 /* CellCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AE95BBF1F78AA77007DF583 /* iOSHelper-For-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSHelper-For-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE95BC21F78AA77007DF583 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AE95BC31F78AA77007DF583 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AE95BC81F78AA77007DF583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AE95BCB1F78AA77007DF583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AE95BCD1F78AA77007DF583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE95BCE1F78AA77007DF583 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AE95BD01F78AA77007DF583 /* iOSHelper_For_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSHelper_For_Mac.entitlements; sourceTree = "<group>"; };
+		9AE95BD71F78AC25007DF583 /* MainTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		9AE95BD81F78AC25007DF583 /* MainTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		9AE95BDA1F78ACC1007DF583 /* JSONToPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONToPropertyViewController.h; sourceTree = "<group>"; };
+		9AE95BDB1F78ACC1007DF583 /* JSONToPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONToPropertyViewController.m; sourceTree = "<group>"; };
+		9AE95BDD1F78AE9F007DF583 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		9AE95BDF1F78AF7B007DF583 /* LazyGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LazyGetViewController.h; sourceTree = "<group>"; };
+		9AE95BE01F78AF7B007DF583 /* LazyGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyGetViewController.m; sourceTree = "<group>"; };
+		9AE95BE21F78AFB2007DF583 /* RegexHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexHelper.h; sourceTree = "<group>"; };
+		9AE95BE31F78AFB2007DF583 /* RegexHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexHelper.m; sourceTree = "<group>"; };
+		9AE95BE51F78B07D007DF583 /* CellCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellCodeViewController.h; sourceTree = "<group>"; };
+		9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellCodeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE95BBC1F78AA77007DF583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AE95BB61F78AA77007DF583 = {
+			isa = PBXGroup;
+			children = (
+				9AE95BC11F78AA77007DF583 /* iOSHelper-For-Mac */,
+				9AE95BC01F78AA77007DF583 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AE95BC01F78AA77007DF583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AE95BBF1F78AA77007DF583 /* iOSHelper-For-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AE95BC11F78AA77007DF583 /* iOSHelper-For-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				9AE95BC21F78AA77007DF583 /* AppDelegate.h */,
+				9AE95BC31F78AA77007DF583 /* AppDelegate.m */,
+				9AE95BE21F78AFB2007DF583 /* RegexHelper.h */,
+				9AE95BE31F78AFB2007DF583 /* RegexHelper.m */,
+				9AE95BD71F78AC25007DF583 /* MainTabViewController.h */,
+				9AE95BD81F78AC25007DF583 /* MainTabViewController.m */,
+				9AE95BDA1F78ACC1007DF583 /* JSONToPropertyViewController.h */,
+				9AE95BDB1F78ACC1007DF583 /* JSONToPropertyViewController.m */,
+				9AE95BDF1F78AF7B007DF583 /* LazyGetViewController.h */,
+				9AE95BE01F78AF7B007DF583 /* LazyGetViewController.m */,
+				9AE95BE51F78B07D007DF583 /* CellCodeViewController.h */,
+				9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */,
+				9AE95BDD1F78AE9F007DF583 /* cat.png */,
+				9AE95BC81F78AA77007DF583 /* Assets.xcassets */,
+				9AE95BCA1F78AA77007DF583 /* Main.storyboard */,
+				9AE95BCD1F78AA77007DF583 /* Info.plist */,
+				9AE95BCE1F78AA77007DF583 /* main.m */,
+				9AE95BD01F78AA77007DF583 /* iOSHelper_For_Mac.entitlements */,
+			);
+			path = "iOSHelper-For-Mac";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AE95BBE1F78AA77007DF583 /* iOSHelper-For-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE95BD31F78AA77007DF583 /* Build configuration list for PBXNativeTarget "iOSHelper-For-Mac" */;
+			buildPhases = (
+				9AE95BBB1F78AA77007DF583 /* Sources */,
+				9AE95BBC1F78AA77007DF583 /* Frameworks */,
+				9AE95BBD1F78AA77007DF583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOSHelper-For-Mac";
+			productName = "iOSHelper-For-Mac";
+			productReference = 9AE95BBF1F78AA77007DF583 /* iOSHelper-For-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AE95BB71F78AA77007DF583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Fidetro;
+				TargetAttributes = {
+					9AE95BBE1F78AA77007DF583 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9AE95BBA1F78AA77007DF583 /* Build configuration list for PBXProject "iOSHelper-For-Mac" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AE95BB61F78AA77007DF583;
+			productRefGroup = 9AE95BC01F78AA77007DF583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AE95BBE1F78AA77007DF583 /* iOSHelper-For-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AE95BBD1F78AA77007DF583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE95BDE1F78AEFD007DF583 /* cat.png in Resources */,
+				9AE95BC91F78AA77007DF583 /* Assets.xcassets in Resources */,
+				9AE95BCC1F78AA77007DF583 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AE95BBB1F78AA77007DF583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE95BD91F78AC25007DF583 /* MainTabViewController.m in Sources */,
+				9AE95BCF1F78AA77007DF583 /* main.m in Sources */,
+				9AE95BDC1F78ACC1007DF583 /* JSONToPropertyViewController.m in Sources */,
+				9AE95BE71F78B07D007DF583 /* CellCodeViewController.m in Sources */,
+				9AE95BE41F78AFB2007DF583 /* RegexHelper.m in Sources */,
+				9AE95BC41F78AA77007DF583 /* AppDelegate.m in Sources */,
+				9AE95BE11F78AF7B007DF583 /* LazyGetViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AE95BCA1F78AA77007DF583 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE95BCB1F78AA77007DF583 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AE95BD11F78AA77007DF583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AE95BD21F78AA77007DF583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AE95BD41F78AA77007DF583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOSHelper-For-Mac/iOSHelper_For_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3BJ7G2PUN;
+				INFOPLIST_FILE = "iOSHelper-For-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fidetro.iOSHelper-For-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AE95BD51F78AA77007DF583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOSHelper-For-Mac/iOSHelper_For_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3BJ7G2PUN;
+				INFOPLIST_FILE = "iOSHelper-For-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fidetro.iOSHelper-For-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AE95BBA1F78AA77007DF583 /* Build configuration list for PBXProject "iOSHelper-For-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE95BD11F78AA77007DF583 /* Debug */,
+				9AE95BD21F78AA77007DF583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE95BD31F78AA77007DF583 /* Build configuration list for PBXNativeTarget "iOSHelper-For-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE95BD41F78AA77007DF583 /* Debug */,
+				9AE95BD51F78AA77007DF583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AE95BB71F78AA77007DF583 /* Project object */;
+}
