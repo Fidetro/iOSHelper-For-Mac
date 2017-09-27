@@ -17,6 +17,8 @@
 		9AE95BE11F78AF7B007DF583 /* LazyGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE01F78AF7B007DF583 /* LazyGetViewController.m */; };
 		9AE95BE41F78AFB2007DF583 /* RegexHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE31F78AFB2007DF583 /* RegexHelper.m */; };
 		9AE95BE71F78B07D007DF583 /* CellCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */; };
+		9AE95C281F79233D007DF583 /* TranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95C271F79233D007DF583 /* TranslationViewController.m */; };
+		9AE95C301F792D33007DF583 /* FindCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95C2F1F792D33007DF583 /* FindCNViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		9AE95BE31F78AFB2007DF583 /* RegexHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexHelper.m; sourceTree = "<group>"; };
 		9AE95BE51F78B07D007DF583 /* CellCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellCodeViewController.h; sourceTree = "<group>"; };
 		9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellCodeViewController.m; sourceTree = "<group>"; };
+		9AE95C261F79233D007DF583 /* TranslationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslationViewController.h; sourceTree = "<group>"; };
+		9AE95C271F79233D007DF583 /* TranslationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
+		9AE95C2E1F792D33007DF583 /* FindCNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindCNViewController.h; sourceTree = "<group>"; };
+		9AE95C2F1F792D33007DF583 /* FindCNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindCNViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 				9AE95BE01F78AF7B007DF583 /* LazyGetViewController.m */,
 				9AE95BE51F78B07D007DF583 /* CellCodeViewController.h */,
 				9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */,
+				9AE95C261F79233D007DF583 /* TranslationViewController.h */,
+				9AE95C271F79233D007DF583 /* TranslationViewController.m */,
+				9AE95C2E1F792D33007DF583 /* FindCNViewController.h */,
+				9AE95C2F1F792D33007DF583 /* FindCNViewController.m */,
 				9AE95BDD1F78AE9F007DF583 /* cat.png */,
 				9AE95BC81F78AA77007DF583 /* Assets.xcassets */,
 				9AE95BCA1F78AA77007DF583 /* Main.storyboard */,
@@ -167,7 +177,9 @@
 				9AE95BD91F78AC25007DF583 /* MainTabViewController.m in Sources */,
 				9AE95BCF1F78AA77007DF583 /* main.m in Sources */,
 				9AE95BDC1F78ACC1007DF583 /* JSONToPropertyViewController.m in Sources */,
+				9AE95C301F792D33007DF583 /* FindCNViewController.m in Sources */,
 				9AE95BE71F78B07D007DF583 /* CellCodeViewController.m in Sources */,
+				9AE95C281F79233D007DF583 /* TranslationViewController.m in Sources */,
 				9AE95BE41F78AFB2007DF583 /* RegexHelper.m in Sources */,
 				9AE95BC41F78AA77007DF583 /* AppDelegate.m in Sources */,
 				9AE95BE11F78AF7B007DF583 /* LazyGetViewController.m in Sources */,
