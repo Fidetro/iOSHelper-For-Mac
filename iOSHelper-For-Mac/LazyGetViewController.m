@@ -50,7 +50,7 @@
         NSString *propertyName = propertyNames[index];
         
         NSString *headString = [NSString stringWithFormat:@"- (%@ *)%@\r{\r    if(!_%@)\r    {\r",className,propertyName,propertyName];
-        NSString *contentString = [NSString stringWithFormat:@"        _%@ = [[%@ alloc]init];\r",propertyName,className];
+        NSString *contentString = [NSString stringWithFormat:@"        _%@ = [[%@ alloc] init];\r",propertyName,className];
         contentString = [self isAddSubview:contentString propertyName:propertyName];
         contentString = [self setViewStyleWithContentString:contentString propertyName:propertyName className:className];
         
