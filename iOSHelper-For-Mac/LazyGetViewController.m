@@ -45,21 +45,21 @@
     NSArray *propertyNames = [RegexHelper matchString:self.leftTextView.string toRegexString:@"\\*(.+?)\\;"];
     
     NSString *getStrings = [NSString string];
+    NSMutableString *addSubviewString = [NSMutableString string];
     for (NSInteger index = 0; index < classNames.count; index++) {
         NSString *className = classNames[index];
         NSString *propertyName = propertyNames[index];
         
         NSString *headString = [NSString stringWithFormat:@"- (%@ *)%@\r{\r    if(!_%@)\r    {\r",className,propertyName,propertyName];
         NSString *contentString = [NSString stringWithFormat:@"        _%@ = [[%@ alloc] init];\r",propertyName,className];
-        contentString = [self isAddSubview:contentString propertyName:propertyName];
         contentString = [self setViewStyleWithContentString:contentString propertyName:propertyName className:className];
-        
+        [addSubviewString appendFormat:@"%@\r",[self isAddSubviewPropertyName:propertyName]];
         NSString *footString = [NSString stringWithFormat:@"    }\r    return _%@;\r}",propertyName];
         
         getStrings = [NSString stringWithFormat:@"%@%@%@%@\r",getStrings,headString,contentString,footString];
         
     }
-    self.rightTextView.string = getStrings;
+    self.rightTextView.string = [addSubviewString length] == 0 ? getStrings : [NSString stringWithFormat:@"%@\r\r\r\r\r\r\r%@",getStrings,addSubviewString];
     
 }
 
@@ -140,19 +140,19 @@
 
 
 
-- (NSString *)isAddSubview:(NSString *)contentString propertyName:(NSString *)propertyName{
-    NSString *superViewString;
+- (NSString *)isAddSubviewPropertyName:(NSString *)propertyName{
+    NSString *superViewString = @"";
     if (self.checkBoxSelf.state == 0 && self.checkBoxSelfView.state == 0 &&self.checkBoxSelfContent.state == 0) {
-        return contentString;
+        return superViewString;
     }else if (self.checkBoxSelf.state == 1){
-        superViewString = @"        UIView *superView = self;";
+        superViewString = [NSString stringWithFormat:@"[self addSubview:self.%@];",propertyName];
     }else if (self.checkBoxSelfView.state == 1){
-        superViewString = @"        UIView *superView = self.view;";
+        superViewString = [NSString stringWithFormat:@"[self.view addSubview:self.%@];",propertyName];
     }else if (self.checkBoxSelfContent.state == 1){
-        superViewString = @"        UIView *superView = self.contentView;";
+        superViewString = [NSString stringWithFormat:@"[self.contentView addSubview:self.%@];",propertyName];
     }
-    contentString = [NSString stringWithFormat:@"%@\r%@        [superView addSubview:_%@];\r",superViewString,contentString,propertyName];
-    return contentString;
+    
+    return superViewString;
 }
 
 - (IBAction)selectAddViewAction:(NSButton *)sender {
