@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="r9z-KX-YJl">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="r9z-KX-YJl">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -707,19 +707,19 @@
         <!--Tab View Controller-->
         <scene sceneID="xl8-Nw-2PB">
             <objects>
-                <tabViewController selectedTabViewItemIndex="4" id="QgB-BN-Yor" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="5" id="QgB-BN-Yor" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="XFU-ER-pGn"/>
                         <tabViewItem id="1z0-rD-fIm"/>
                         <tabViewItem id="QLy-al-VsO"/>
                         <tabViewItem id="sYs-ah-0c4"/>
                         <tabViewItem id="YWM-Lq-OPO"/>
+                        <tabViewItem id="LwX-yd-9VK"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="Hzn-1o-xca">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
-                        <tabViewItems/>
                         <connections>
                             <outlet property="delegate" destination="QgB-BN-Yor" id="Y6y-Oy-qPD"/>
                         </connections>
@@ -731,11 +731,12 @@
                         <segue destination="0o6-Fi-GgP" kind="relationship" relationship="tabItems" id="5Lm-Nj-HN9"/>
                         <segue destination="Uvb-w4-hZm" kind="relationship" relationship="tabItems" id="1iz-yG-tEj"/>
                         <segue destination="pU2-Ed-xiS" kind="relationship" relationship="tabItems" id="db2-VJ-OOw"/>
+                        <segue destination="H1y-BV-Qt3" kind="relationship" relationship="tabItems" id="lVI-vs-jfn"/>
                     </connections>
                 </tabViewController>
                 <customObject id="jzP-sV-3hZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651" y="-60"/>
+            <point key="canvasLocation" x="465" y="-101"/>
         </scene>
         <!--JSONToProperty-->
         <scene sceneID="HWe-K6-gdJ">
@@ -981,7 +982,7 @@
                                 </buttonCell>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="qD0-Io-963">
-                                <rect key="frame" x="882" y="455" width="140" height="18"/>
+                                <rect key="frame" x="882" y="455" width="139" height="18"/>
                                 <buttonCell key="cell" type="check" title="ButtonTitleColorSel" bezelStyle="regularSquare" imagePosition="left" inset="2" id="q69-5U-D5W">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1002,7 +1003,7 @@
                                 </buttonCell>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Jes-ao-Rmm">
-                                <rect key="frame" x="256" y="455" width="114" height="18"/>
+                                <rect key="frame" x="256" y="455" width="113" height="18"/>
                                 <buttonCell key="cell" type="check" title="LabelTextColor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="3C0-hH-cVE">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1030,7 +1031,7 @@
                                 </buttonCell>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="ZQd-Xn-vhA">
-                                <rect key="frame" x="376" y="474" width="125" height="18"/>
+                                <rect key="frame" x="375" y="474" width="125" height="18"/>
                                 <buttonCell key="cell" type="check" title="ImageViewImage" bezelStyle="regularSquare" imagePosition="left" inset="2" id="4bw-zc-oFJ">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1108,7 +1109,7 @@
                 </viewController>
                 <customObject id="V9b-QJ-iny" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="201"/>
+            <point key="canvasLocation" x="1589" y="342"/>
         </scene>
         <!--Cell Code-->
         <scene sceneID="gSd-Ha-64f">
@@ -1414,7 +1415,283 @@
                 </viewController>
                 <customObject id="kV2-Cm-DIp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="528" y="323"/>
+            <point key="canvasLocation" x="228" y="772"/>
+        </scene>
+        <!--InitView-->
+        <scene sceneID="ub3-W7-AZn">
+            <objects>
+                <viewController title="InitView" id="H1y-BV-Qt3" customClass="InitViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="jkp-St-ogS">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="500"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Yx3-jm-Zs2">
+                                <rect key="frame" x="590" y="200" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BGK-kW-Upe"/>
+                                    <constraint firstAttribute="height" constant="100" id="QfF-aT-azi"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cat" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ugr-CD-AqJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickAction:" target="H1y-BV-Qt3" id="Jb7-2H-qcg"/>
+                                </connections>
+                            </button>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBs-Ii-rR1">
+                                <rect key="frame" x="0.0" y="0.0" width="590" height="428"/>
+                                <clipView key="contentView" id="Hef-ld-yhU">
+                                    <rect key="frame" x="1" y="1" width="588" height="426"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="ngp-JE-KDw">
+                                            <rect key="frame" x="0.0" y="0.0" width="939" height="426"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="588" height="426"/>
+                                            <size key="maxSize" width="941" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Vhx-b0-Wdi">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="v1g-7D-6iu">
+                                    <rect key="frame" x="573" y="1" width="16" height="426"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBS-OC-5ow">
+                                <rect key="frame" x="690" y="0.0" width="590" height="427"/>
+                                <clipView key="contentView" id="AiC-bm-WPJ">
+                                    <rect key="frame" x="1" y="1" width="588" height="425"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="5PY-Hf-fuL">
+                                            <rect key="frame" x="0.0" y="0.0" width="588" height="425"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="588" height="425"/>
+                                            <size key="maxSize" width="590" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="NFs-GP-aCR">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Aa6-0b-8OD">
+                                    <rect key="frame" x="573" y="1" width="16" height="425"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="iBf-Vz-GbA">
+                                <rect key="frame" x="48" y="474" width="154" height="18"/>
+                                <buttonCell key="cell" type="check" title="addSubview-self.view" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jtJ-kk-4Cn">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectAddViewAction:" target="H1y-BV-Qt3" id="1BA-ZE-Coz"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="GTL-fZ-zKW">
+                                <rect key="frame" x="48" y="455" width="124" height="18"/>
+                                <buttonCell key="cell" type="check" title="addSubview-self" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mYM-HO-bjn">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectAddSelfAction:" target="H1y-BV-Qt3" id="cja-qm-T3S"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="khX-2C-Qm0">
+                                <rect key="frame" x="48" y="436" width="202" height="18"/>
+                                <buttonCell key="cell" type="check" title="addSubview-self.contentView" bezelStyle="regularSquare" imagePosition="left" inset="2" id="whz-lM-93H">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectAddSubviewContentAction:" target="H1y-BV-Qt3" id="ugg-gP-Ovc"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="3U0-yG-g8t">
+                                <rect key="frame" x="256" y="474" width="82" height="18"/>
+                                <buttonCell key="cell" type="check" title="LabelFont" bezelStyle="regularSquare" imagePosition="left" inset="2" id="QIl-Hb-BMB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Zb8-zv-v8f">
+                                <rect key="frame" x="638" y="474" width="110" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonTitleNor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mKK-RS-rvk">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="jB1-HE-2XN">
+                                <rect key="frame" x="638" y="455" width="107" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonTitleSel" bezelStyle="regularSquare" imagePosition="left" inset="2" id="S9n-ms-vxb">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="jvc-C8-9d9">
+                                <rect key="frame" x="754" y="474" width="122" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonImageNor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="IgV-gp-Tmj">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-Tx-k9l">
+                                <rect key="frame" x="754" y="455" width="118" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonImageSel" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0y4-Ak-KKd">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="QKN-pQ-8UH">
+                                <rect key="frame" x="882" y="474" width="143" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonTitleColorNor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="tY8-S2-pYB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="h5K-Y7-sjL">
+                                <rect key="frame" x="882" y="455" width="139" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonTitleColorSel" bezelStyle="regularSquare" imagePosition="left" inset="2" id="V7v-LG-8bw">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="RLL-Xi-oTD">
+                                <rect key="frame" x="638" y="436" width="115" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonTitleFont" bezelStyle="regularSquare" imagePosition="left" inset="2" id="wE1-AH-noQ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="s0g-1D-OPT">
+                                <rect key="frame" x="754" y="436" width="112" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonBgColor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vwx-xd-BME">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="DQp-TM-8Yq">
+                                <rect key="frame" x="256" y="455" width="113" height="18"/>
+                                <buttonCell key="cell" type="check" title="LabelTextColor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mHf-8S-XMm">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="sBW-sr-Hnb">
+                                <rect key="frame" x="256" y="436" width="81" height="18"/>
+                                <buttonCell key="cell" type="check" title="LabelText" bezelStyle="regularSquare" imagePosition="left" inset="2" id="OcE-YH-mEW">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="b5h-vf-Pmn">
+                                <rect key="frame" x="1031" y="474" width="138" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonBgImageNor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Dqv-yH-PWU">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Aq6-nc-3dt">
+                                <rect key="frame" x="1031" y="455" width="135" height="18"/>
+                                <buttonCell key="cell" type="check" title="ButtonBgImageSel" bezelStyle="regularSquare" imagePosition="left" inset="2" id="q7x-tg-LWG">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="673-8m-Tru">
+                                <rect key="frame" x="375" y="474" width="125" height="18"/>
+                                <buttonCell key="cell" type="check" title="ImageViewImage" bezelStyle="regularSquare" imagePosition="left" inset="2" id="UFu-Dg-cr6">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="RLL-Xi-oTD" firstAttribute="top" secondItem="jB1-HE-2XN" secondAttribute="bottom" constant="5" id="3Qo-7Q-M7T"/>
+                            <constraint firstItem="QKN-pQ-8UH" firstAttribute="leading" secondItem="jvc-C8-9d9" secondAttribute="trailing" constant="10" id="3aS-uC-nbo"/>
+                            <constraint firstItem="sBS-OC-5ow" firstAttribute="leading" secondItem="Yx3-jm-Zs2" secondAttribute="trailing" id="98U-KI-Dci"/>
+                            <constraint firstItem="3U0-yG-g8t" firstAttribute="leading" secondItem="khX-2C-Qm0" secondAttribute="trailing" constant="10" id="9pC-xV-Y9l"/>
+                            <constraint firstAttribute="bottom" secondItem="sBS-OC-5ow" secondAttribute="bottom" id="B3h-H7-tD3"/>
+                            <constraint firstItem="sBW-sr-Hnb" firstAttribute="centerY" secondItem="khX-2C-Qm0" secondAttribute="centerY" id="Dgl-8i-Zlr"/>
+                            <constraint firstItem="jvc-C8-9d9" firstAttribute="leading" secondItem="Zb8-zv-v8f" secondAttribute="trailing" constant="10" id="DqG-fT-bMT"/>
+                            <constraint firstItem="673-8m-Tru" firstAttribute="centerY" secondItem="3U0-yG-g8t" secondAttribute="centerY" id="DvN-G0-mQc"/>
+                            <constraint firstItem="Zb8-zv-v8f" firstAttribute="leading" secondItem="Yx3-jm-Zs2" secondAttribute="centerX" id="FCy-ip-8L7"/>
+                            <constraint firstItem="h5K-Y7-sjL" firstAttribute="leading" secondItem="QKN-pQ-8UH" secondAttribute="leading" id="GE9-PL-8lK"/>
+                            <constraint firstItem="khX-2C-Qm0" firstAttribute="top" secondItem="GTL-fZ-zKW" secondAttribute="bottom" constant="5" id="H2Z-FW-WTh"/>
+                            <constraint firstItem="DQp-TM-8Yq" firstAttribute="leading" secondItem="3U0-yG-g8t" secondAttribute="leading" id="H5l-In-Mfu"/>
+                            <constraint firstItem="sBS-OC-5ow" firstAttribute="top" secondItem="ngp-JE-KDw" secondAttribute="top" id="IIQ-9k-zxy"/>
+                            <constraint firstItem="Y4r-Tx-k9l" firstAttribute="top" secondItem="jvc-C8-9d9" secondAttribute="bottom" constant="5" id="KZl-31-qGc"/>
+                            <constraint firstItem="Yx3-jm-Zs2" firstAttribute="leading" secondItem="IBs-Ii-rR1" secondAttribute="trailing" id="L7a-Y9-Rza"/>
+                            <constraint firstItem="DQp-TM-8Yq" firstAttribute="top" secondItem="3U0-yG-g8t" secondAttribute="bottom" constant="5" id="Lsc-d3-tPw"/>
+                            <constraint firstItem="GTL-fZ-zKW" firstAttribute="leading" secondItem="iBf-Vz-GbA" secondAttribute="leading" id="MhX-fy-NQM"/>
+                            <constraint firstItem="khX-2C-Qm0" firstAttribute="leading" secondItem="GTL-fZ-zKW" secondAttribute="leading" id="PEv-L1-i7w"/>
+                            <constraint firstItem="Aq6-nc-3dt" firstAttribute="centerY" secondItem="h5K-Y7-sjL" secondAttribute="centerY" id="QBZ-oR-T7d"/>
+                            <constraint firstItem="RLL-Xi-oTD" firstAttribute="leading" secondItem="jB1-HE-2XN" secondAttribute="leading" id="TFO-if-EnI"/>
+                            <constraint firstItem="Zb8-zv-v8f" firstAttribute="centerY" secondItem="3U0-yG-g8t" secondAttribute="centerY" id="Uxx-X5-ADF"/>
+                            <constraint firstItem="Aq6-nc-3dt" firstAttribute="leading" secondItem="b5h-vf-Pmn" secondAttribute="leading" id="Vhz-a8-blz"/>
+                            <constraint firstItem="s0g-1D-OPT" firstAttribute="top" secondItem="Y4r-Tx-k9l" secondAttribute="bottom" constant="5" id="Vq7-4i-3U2"/>
+                            <constraint firstItem="IBs-Ii-rR1" firstAttribute="top" secondItem="khX-2C-Qm0" secondAttribute="bottom" constant="10" id="XGw-VB-2r0"/>
+                            <constraint firstItem="3U0-yG-g8t" firstAttribute="centerY" secondItem="iBf-Vz-GbA" secondAttribute="centerY" id="XxC-fP-cpY"/>
+                            <constraint firstItem="jvc-C8-9d9" firstAttribute="top" secondItem="jkp-St-ogS" secondAttribute="top" constant="10" id="cSi-th-fUm"/>
+                            <constraint firstItem="iBf-Vz-GbA" firstAttribute="top" secondItem="jkp-St-ogS" secondAttribute="top" constant="10" id="d7B-rR-gbb"/>
+                            <constraint firstItem="jB1-HE-2XN" firstAttribute="leading" secondItem="Zb8-zv-v8f" secondAttribute="leading" id="eHh-uf-bde"/>
+                            <constraint firstItem="s0g-1D-OPT" firstAttribute="leading" secondItem="Y4r-Tx-k9l" secondAttribute="leading" id="erw-uN-ORu"/>
+                            <constraint firstItem="iBf-Vz-GbA" firstAttribute="leading" secondItem="jkp-St-ogS" secondAttribute="leading" constant="50" id="fco-PR-EIU"/>
+                            <constraint firstItem="b5h-vf-Pmn" firstAttribute="centerY" secondItem="QKN-pQ-8UH" secondAttribute="centerY" id="gUv-Jg-F9O"/>
+                            <constraint firstItem="Yx3-jm-Zs2" firstAttribute="centerX" secondItem="jkp-St-ogS" secondAttribute="centerX" id="k5v-zt-e24"/>
+                            <constraint firstItem="QKN-pQ-8UH" firstAttribute="top" secondItem="jkp-St-ogS" secondAttribute="top" constant="10" id="m9z-qd-lpu"/>
+                            <constraint firstItem="b5h-vf-Pmn" firstAttribute="leading" secondItem="QKN-pQ-8UH" secondAttribute="trailing" constant="10" id="pkS-rV-FGH"/>
+                            <constraint firstItem="IBs-Ii-rR1" firstAttribute="leading" secondItem="jkp-St-ogS" secondAttribute="leading" id="q6c-RQ-ujI"/>
+                            <constraint firstItem="673-8m-Tru" firstAttribute="leading" secondItem="DQp-TM-8Yq" secondAttribute="trailing" constant="10" id="qTl-rK-ddw"/>
+                            <constraint firstItem="sBW-sr-Hnb" firstAttribute="leading" secondItem="DQp-TM-8Yq" secondAttribute="leading" id="rc4-IZ-Sr8"/>
+                            <constraint firstAttribute="bottom" secondItem="IBs-Ii-rR1" secondAttribute="bottom" id="uqo-mD-LlH"/>
+                            <constraint firstItem="h5K-Y7-sjL" firstAttribute="top" secondItem="QKN-pQ-8UH" secondAttribute="bottom" constant="5" id="xJv-jz-eLR"/>
+                            <constraint firstAttribute="trailing" secondItem="sBS-OC-5ow" secondAttribute="trailing" id="xk1-bO-7m2"/>
+                            <constraint firstItem="GTL-fZ-zKW" firstAttribute="top" secondItem="iBf-Vz-GbA" secondAttribute="bottom" constant="5" id="yCd-zP-gYH"/>
+                            <constraint firstItem="jB1-HE-2XN" firstAttribute="top" secondItem="Zb8-zv-v8f" secondAttribute="bottom" constant="5" id="yTi-kQ-qGz"/>
+                            <constraint firstItem="Y4r-Tx-k9l" firstAttribute="leading" secondItem="jvc-C8-9d9" secondAttribute="leading" id="yel-op-ugf"/>
+                            <constraint firstItem="Yx3-jm-Zs2" firstAttribute="centerY" secondItem="jkp-St-ogS" secondAttribute="centerY" id="zHS-zh-MgI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkBoxBgImageNor" destination="b5h-vf-Pmn" id="gIJ-NV-oTu"/>
+                        <outlet property="checkBoxBgImageSel" destination="Aq6-nc-3dt" id="Nk3-LR-bzx"/>
+                        <outlet property="checkBoxButtonBgColor" destination="s0g-1D-OPT" id="MA5-DN-Uf0"/>
+                        <outlet property="checkBoxButtonImageNor" destination="jvc-C8-9d9" id="dHg-Oq-Bm2"/>
+                        <outlet property="checkBoxButtonImageSel" destination="Y4r-Tx-k9l" id="JQl-Tx-c7p"/>
+                        <outlet property="checkBoxButtonTitleColorNor" destination="QKN-pQ-8UH" id="DrK-RK-oxc"/>
+                        <outlet property="checkBoxButtonTitleColorSel" destination="h5K-Y7-sjL" id="aVP-RH-02B"/>
+                        <outlet property="checkBoxButtonTitleFont" destination="RLL-Xi-oTD" id="SXi-ka-qh5"/>
+                        <outlet property="checkBoxButtonTitleNor" destination="Zb8-zv-v8f" id="FWx-2D-PlY"/>
+                        <outlet property="checkBoxButtonTitleSel" destination="jB1-HE-2XN" id="9Xx-4d-DEX"/>
+                        <outlet property="checkBoxImageViewImage" destination="673-8m-Tru" id="Yai-HA-dhA"/>
+                        <outlet property="checkBoxLabelFont" destination="3U0-yG-g8t" id="QEf-N3-7sv"/>
+                        <outlet property="checkBoxLabelText" destination="sBW-sr-Hnb" id="s9A-gW-yT6"/>
+                        <outlet property="checkBoxLabelTextColor" destination="DQp-TM-8Yq" id="db8-Gg-b07"/>
+                        <outlet property="checkBoxSelf" destination="GTL-fZ-zKW" id="paN-QG-ojv"/>
+                        <outlet property="checkBoxSelfContent" destination="khX-2C-Qm0" id="5sz-Hu-YXU"/>
+                        <outlet property="checkBoxSelfView" destination="iBf-Vz-GbA" id="yiY-8c-oQY"/>
+                        <outlet property="leftTextView" destination="ngp-JE-KDw" id="R9M-b4-Qb2"/>
+                        <outlet property="rightTextView" destination="5PY-Hf-fuL" id="kCa-mx-BHA"/>
+                    </connections>
+                </viewController>
+                <customObject id="KFy-Ok-OOY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="-596"/>
         </scene>
     </scenes>
     <resources>
