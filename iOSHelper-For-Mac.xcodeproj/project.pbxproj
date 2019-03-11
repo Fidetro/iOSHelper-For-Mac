@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9A03142920EF596100F9EC5E /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A03142820EF596100F9EC5E /* InitViewController.m */; };
+		9A7CD43E21CC96AD0060C558 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7CD43D21CC96AD0060C558 /* Cocoa.framework */; };
+		9A7CD44221CC96AD0060C558 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7CD44121CC96AD0060C558 /* SourceEditorExtension.m */; };
+		9A7CD44521CC96AD0060C558 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7CD44421CC96AD0060C558 /* SourceEditorCommand.m */; };
+		9A7CD44A21CC96AD0060C558 /* iOSHelper-For-Xcode.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A7CD43B21CC96AD0060C558 /* iOSHelper-For-Xcode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9AE95BC41F78AA77007DF583 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BC31F78AA77007DF583 /* AppDelegate.m */; };
 		9AE95BC91F78AA77007DF583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE95BC81F78AA77007DF583 /* Assets.xcassets */; };
 		9AE95BCC1F78AA77007DF583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE95BCA1F78AA77007DF583 /* Main.storyboard */; };
@@ -22,9 +26,41 @@
 		9AE95C301F792D33007DF583 /* FindCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95C2F1F792D33007DF583 /* FindCNViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9A7CD44821CC96AD0060C558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE95BB71F78AA77007DF583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A7CD43A21CC96AD0060C558;
+			remoteInfo = "iOSHelper-For-Xcode";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A7CD44E21CC96AD0060C558 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A7CD44A21CC96AD0060C558 /* iOSHelper-For-Xcode.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9A03142720EF596100F9EC5E /* InitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
 		9A03142820EF596100F9EC5E /* InitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		9A7CD43B21CC96AD0060C558 /* iOSHelper-For-Xcode.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOSHelper-For-Xcode.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7CD43D21CC96AD0060C558 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9A7CD44021CC96AD0060C558 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		9A7CD44121CC96AD0060C558 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		9A7CD44321CC96AD0060C558 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		9A7CD44421CC96AD0060C558 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		9A7CD44621CC96AD0060C558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7CD44721CC96AD0060C558 /* iOSHelper_For_Xcode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSHelper_For_Xcode.entitlements; sourceTree = "<group>"; };
 		9AE95BBF1F78AA77007DF583 /* iOSHelper-For-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSHelper-For-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE95BC21F78AA77007DF583 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AE95BC31F78AA77007DF583 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +87,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A7CD43821CC96AD0060C558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7CD43E21CC96AD0060C558 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AE95BBC1F78AA77007DF583 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +105,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A7CD43C21CC96AD0060C558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A7CD43D21CC96AD0060C558 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A7CD43F21CC96AD0060C558 /* iOSHelper-For-Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				9A7CD44021CC96AD0060C558 /* SourceEditorExtension.h */,
+				9A7CD44121CC96AD0060C558 /* SourceEditorExtension.m */,
+				9A7CD44321CC96AD0060C558 /* SourceEditorCommand.h */,
+				9A7CD44421CC96AD0060C558 /* SourceEditorCommand.m */,
+				9A7CD44621CC96AD0060C558 /* Info.plist */,
+				9A7CD44721CC96AD0060C558 /* iOSHelper_For_Xcode.entitlements */,
+			);
+			path = "iOSHelper-For-Xcode";
+			sourceTree = "<group>";
+		};
 		9AE95BB61F78AA77007DF583 = {
 			isa = PBXGroup;
 			children = (
 				9AE95BC11F78AA77007DF583 /* iOSHelper-For-Mac */,
+				9A7CD43F21CC96AD0060C558 /* iOSHelper-For-Xcode */,
+				9A7CD43C21CC96AD0060C558 /* Frameworks */,
 				9AE95BC01F78AA77007DF583 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE95BBF1F78AA77007DF583 /* iOSHelper-For-Mac.app */,
+				9A7CD43B21CC96AD0060C558 /* iOSHelper-For-Xcode.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +179,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9A7CD43A21CC96AD0060C558 /* iOSHelper-For-Xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A7CD44D21CC96AD0060C558 /* Build configuration list for PBXNativeTarget "iOSHelper-For-Xcode" */;
+			buildPhases = (
+				9A7CD43721CC96AD0060C558 /* Sources */,
+				9A7CD43821CC96AD0060C558 /* Frameworks */,
+				9A7CD43921CC96AD0060C558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOSHelper-For-Xcode";
+			productName = "iOSHelper-For-Xcode";
+			productReference = 9A7CD43B21CC96AD0060C558 /* iOSHelper-For-Xcode.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 		9AE95BBE1F78AA77007DF583 /* iOSHelper-For-Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE95BD31F78AA77007DF583 /* Build configuration list for PBXNativeTarget "iOSHelper-For-Mac" */;
@@ -118,10 +203,12 @@
 				9AE95BBB1F78AA77007DF583 /* Sources */,
 				9AE95BBC1F78AA77007DF583 /* Frameworks */,
 				9AE95BBD1F78AA77007DF583 /* Resources */,
+				9A7CD44E21CC96AD0060C558 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9A7CD44921CC96AD0060C558 /* PBXTargetDependency */,
 			);
 			name = "iOSHelper-For-Mac";
 			productName = "iOSHelper-For-Mac";
@@ -137,6 +224,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Fidetro;
 				TargetAttributes = {
+					9A7CD43A21CC96AD0060C558 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
 					9AE95BBE1F78AA77007DF583 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -157,11 +248,19 @@
 			projectRoot = "";
 			targets = (
 				9AE95BBE1F78AA77007DF583 /* iOSHelper-For-Mac */,
+				9A7CD43A21CC96AD0060C558 /* iOSHelper-For-Xcode */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9A7CD43921CC96AD0060C558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AE95BBD1F78AA77007DF583 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +274,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9A7CD43721CC96AD0060C558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7CD44221CC96AD0060C558 /* SourceEditorExtension.m in Sources */,
+				9A7CD44521CC96AD0060C558 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AE95BBB1F78AA77007DF583 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +302,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9A7CD44921CC96AD0060C558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A7CD43A21CC96AD0060C558 /* iOSHelper-For-Xcode */;
+			targetProxy = 9A7CD44821CC96AD0060C558 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9AE95BCA1F78AA77007DF583 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -206,6 +322,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9A7CD44B21CC96AD0060C558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "iOSHelper-For-Xcode/iOSHelper_For_Xcode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3BJ7G2PUN;
+				INFOPLIST_FILE = "iOSHelper-For-Xcode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fidetro.iOSHelper-For-Mac.iOSHelper-For-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A7CD44C21CC96AD0060C558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "iOSHelper-For-Xcode/iOSHelper_For_Xcode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3BJ7G2PUN;
+				INFOPLIST_FILE = "iOSHelper-For-Xcode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fidetro.iOSHelper-For-Mac.iOSHelper-For-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9AE95BD11F78AA77007DF583 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,6 +499,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9A7CD44D21CC96AD0060C558 /* Build configuration list for PBXNativeTarget "iOSHelper-For-Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A7CD44B21CC96AD0060C558 /* Debug */,
+				9A7CD44C21CC96AD0060C558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9AE95BBA1F78AA77007DF583 /* Build configuration list for PBXProject "iOSHelper-For-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
