@@ -20,6 +20,7 @@
 		9AE95BE71F78B07D007DF583 /* CellCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */; };
 		9AE95C281F79233D007DF583 /* TranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95C271F79233D007DF583 /* TranslationViewController.m */; };
 		9AE95C301F792D33007DF583 /* FindCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE95C2F1F792D33007DF583 /* FindCNViewController.m */; };
+		B47D3BE827BBFD7D000BC69D /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B47D3BE727BBFD7D000BC69D /* CustomTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		9AE95C271F79233D007DF583 /* TranslationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
 		9AE95C2E1F792D33007DF583 /* FindCNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindCNViewController.h; sourceTree = "<group>"; };
 		9AE95C2F1F792D33007DF583 /* FindCNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindCNViewController.m; sourceTree = "<group>"; };
+		B47D3BE627BBFD7D000BC69D /* CustomTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
+		B47D3BE727BBFD7D000BC69D /* CustomTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				9AE95BDB1F78ACC1007DF583 /* JSONToPropertyViewController.m */,
 				9AE95BDF1F78AF7B007DF583 /* LazyGetViewController.h */,
 				9AE95BE01F78AF7B007DF583 /* LazyGetViewController.m */,
+				B47D3BE627BBFD7D000BC69D /* CustomTextView.h */,
+				B47D3BE727BBFD7D000BC69D /* CustomTextView.m */,
 				9AE95BE51F78B07D007DF583 /* CellCodeViewController.h */,
 				9AE95BE61F78B07D007DF583 /* CellCodeViewController.m */,
 				9AE95C261F79233D007DF583 /* TranslationViewController.h */,
@@ -186,6 +191,7 @@
 				9AE95C301F792D33007DF583 /* FindCNViewController.m in Sources */,
 				9AE95BE71F78B07D007DF583 /* CellCodeViewController.m in Sources */,
 				9AE95C281F79233D007DF583 /* TranslationViewController.m in Sources */,
+				B47D3BE827BBFD7D000BC69D /* CustomTextView.m in Sources */,
 				9AE95BE41F78AFB2007DF583 /* RegexHelper.m in Sources */,
 				9AE95BC41F78AA77007DF583 /* AppDelegate.m in Sources */,
 				9AE95BE11F78AF7B007DF583 /* LazyGetViewController.m in Sources */,

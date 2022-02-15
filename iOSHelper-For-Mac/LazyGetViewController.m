@@ -9,8 +9,9 @@
 #import "LazyGetViewController.h"
 #import <objc/runtime.h>
 #import "RegexHelper.h"
+#import "CustomTextView.h"
 @interface LazyGetViewController ()
-@property (unsafe_unretained) IBOutlet NSTextView *leftTextView;
+@property (unsafe_unretained) IBOutlet CustomTextView *leftTextView;
 @property (unsafe_unretained) IBOutlet NSTextView *rightTextView;
 
 @property (weak) IBOutlet NSButton *checkBoxSelfView;
@@ -38,7 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    self.leftTextView.placeholderAttributedString = [[NSAttributedString alloc] initWithString:@"@property (nonatomic, strong) UIButton *button;\n@property (nonatomic, strong) UILabel *label;\n@property (nonatomic, strong) UIImageView *imageView;" attributes:@{NSForegroundColorAttributeName:[NSColor placeholderTextColor],NSFontAttributeName:self.leftTextView.font == nil ? [NSFont systemFontOfSize:15] : self.leftTextView.font}];
 }
 - (IBAction)clickAction:(id)sender {
     NSArray *classNames = [RegexHelper matchString:self.leftTextView.string toRegexString:@"\\)(.+?)\\*"];

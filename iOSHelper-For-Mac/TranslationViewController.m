@@ -45,4 +45,30 @@
     
 }
 
+
+- (void)cutTranslation
+{
+    NSString *string = self.leftTextView.string;
+    NSMutableArray *array = [NSMutableArray array];
+    NSMutableString *showString = [NSMutableString string];
+    
+    for (NSString *str in [string componentsSeparatedByString:@"\n"])
+    {
+        if (![str isEqualToString:@""])
+        {
+            [array addObject:str];
+        }
+    }
+
+    for (int i = 0; i < array.count; i++)
+    {
+       NSString *str = [[array[i] componentsSeparatedByString:@"="] lastObject];
+        str = [str substringFromIndex:2];
+        str = [str substringToIndex:[str length] - 2];
+        [showString appendFormat:@"%@\n",str];
+    }
+    self.rightTextView.string = [showString copy];
+    
+}
+
 @end
