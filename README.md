@@ -1,3 +1,5 @@
+
+[![Powered by OrcaRouter](https://img.shields.io/badge/Powered_by-OrcaRouter-2563eb)](https://www.orcarouter.ai/ref/ref_c38bd2e3a82d676347b5)
 # iOSHelper-For-Mac
 整合一些之前自己开发使用的工具
 
